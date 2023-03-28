@@ -1,36 +1,27 @@
-const root = document.querySelector("#root");
+const mainElFirst = (
+  <div class="main">; const mainElLast = 자바스크립트로 만드는 HTML!</div>
+);
 
-const mainElFrist = `<div class="main">`;
-const mainElLast = `</div>`;
+const titleElFirst = <div class="title">; const titleElLast = </div>;
 
-const titleElFirst = `<div class="title">`;
-const titleElLast = `</div>`;
+const ulElFirst = <ul>; const ulElLast = </ul>;
 
-const ulElFirst = `<ul>`;
-const ulElLast = `</ul>`;
-
-const liElFirst = `<li>`;
-const liElLast = `</li>`;
+const liElFirst = <li>; const liElLast = </li>;
 
 const titleContent = `리액트를 잘하려면?`;
-const howToMasterReact = [
-  `자바스크립트를 잘해야 한다`,
-  `CSS를 잘해야 한다`,
-  `HTML을 잘해야 한다`,
-];
+const howToMasterReact = ["공부를 해라", "연습을 해라", "다시 태어나라"];
 
 const liArray = howToMasterReact.map((v, i) => {
-  return `${liElFirst}${i + 1}. ${v}${liElLast}`;
+  return `${i + 1}. ${v}`;
 });
 
-console.log(liArray);
+console.log(...liArray);
 
 root.innerHTML =
-  mainElFrist +
+  mainElFirst +
   titleElFirst +
   titleContent +
   titleElLast +
   ulElFirst +
-  liArray +
   ulElLast +
   mainElLast;
