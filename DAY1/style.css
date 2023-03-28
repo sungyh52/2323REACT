@@ -1,0 +1,27 @@
+body {
+  margin: 0;
+}
+
+.main {
+  background-color: hotpink;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+/* ul {
+  list-style: none;
+  padding: 0;
+} */
+
+li {
+  margin-bottom: 4px;
+}
